@@ -1,0 +1,133 @@
+#top-wrap {
+    margin: 0 auto;
+    // padding: 2px 0 6px;
+    background: #F37435;
+    height: 32px;
+}
+.topsi {
+    max-width: 1190px;
+	margin: 0 auto;
+	padding: 0px 0;
+	display: flex;
+	justify-content: space-between;
+}
+.topsi a {
+	color: #222;
+}
+.helps {
+	float: left;
+	padding: 4px 14px;
+	border-radius: 4px;
+	font-size: 14px;
+	margin-top: -2px;
+	margin-right: 12px;
+	background: #fff;
+}
+.helps2 {
+	float: left;
+	padding: 4px 14px;
+	border-radius: 4px;
+	font-size: 14px;
+	margin-top: -2px;
+	background: #FFDD00;
+}
+.helps:hover, .helps2:hover {
+	background: #444444;
+}
+.topsi a:hover {
+	color: #fff;
+}
+.topsi li {
+    list-style: none;
+	color: #fff;
+	font-size: 16px;
+}
+.list {
+    // float: left;
+	max-width: 300px;
+	margin: 4px 0 0 0;
+}
+.numberz {
+    // float: right;
+	max-width: 760px;
+	margin: 4px 0 0 0;
+}
+.scl {
+	width: 20px;
+	margin-right: 8px;
+	background: #000;
+	border-radius: 40px;
+	padding: 4px;
+}
+.scl:hover {
+	background: #AE0000;
+}
+.spacer2 {
+	margin-right: 20px;
+	float: left;
+}
+.spacer {
+	margin: 0 10px;
+}
+.cont-icon {
+	float: left;
+	width: 16px;
+	margin-top: 4px;
+	margin-right: 8px;
+}
+
+.wrapper{
+    height: 94px;
+    display: flex;
+	justify-content: space-around;
+    .logo{
+        height: 94px;
+        width: 94px;
+        img{
+            height: 90px;
+            width: 90px;
+            margin: 2px 0;
+        }
+    }    
+}
+.excellence{
+    img{
+        height: 80px;
+    }
+}
+
+.login-btn{
+    display: flex;
+    align-items: center;
+    span{
+        background: #F37435;
+        color: #fff;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+}
+.navbar{
+	border-radius: unset;
+	margin-bottom: 0px;
+}
+/* Make the image fully responsive */
+.container{
+	width: 100%;
+	margin: unset;
+	padding: unset;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 100%;
+  margin: auto;
+}
+
+// --Responsiveness---
+@media (max-width: 768px){
+.helps, .helps2 {
+    display: none;
+}
+}
