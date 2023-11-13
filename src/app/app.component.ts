@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as $ from 'jquery';
 interface Food {
   value: string;
   viewValue: string;
@@ -17,4 +18,17 @@ export class AppComponent {
     {value: 'pizza-1', viewValue: 'Pizza'},
     {value: 'tacos-2', viewValue: 'Tacos'},
   ];
+
+
+  myFunction() {
+    console.log('--->',$('#myLinks').css('display'));
+    
+    if ($('#myLinks').css('display') === "block") {
+      $('#myLinks').css('display','none');
+    } else {
+      $('#myLinks').css('display','block');
+      $('.super-menu').css('display','block');
+
+    }
+  }
 }

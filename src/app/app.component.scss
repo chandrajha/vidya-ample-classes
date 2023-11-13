@@ -1,7 +1,7 @@
 #top-wrap {
     margin: 0 auto;
     // padding: 2px 0 6px;
-    background: #F37435;
+    background: #090966;
     height: 32px;
 }
 .topsi {
@@ -100,7 +100,7 @@
     display: flex;
     align-items: center;
     span{
-        background: #F37435;
+        background: #090966;
         color: #fff;
         border-radius: 10px;
         padding: 10px 20px;
@@ -125,9 +125,34 @@
   margin: auto;
 }
 
+.mobile-menu{
+	display: none;
+}
+
 // --Responsiveness---
 @media (max-width: 768px){
-.helps, .helps2 {
-    display: none;
-}
+	.helps, .helps2 {
+		display: none;
+	}
+	.all-india-test-series,.whats-app{
+		display: none;
+	}
+	#myLinks {
+		display: none;
+	}
+	.super-menu{
+		display: flex;
+		justify-content: space-between;
+		background: black;
+		color: white;
+		padding: 10px;
+	}
+	.super-menu a .fa{
+		font-size:20px !important;
+	}
+	.mobile-menu{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
 }
