@@ -11,6 +11,7 @@ interface Food {
 })
 
 export class AppComponent {
+  
   title = 'vidya-ample';
   selectedValue: string='';
   foods: Food[] = [
@@ -20,9 +21,7 @@ export class AppComponent {
   ];
 
 
-  myFunction() {
-    console.log('--->',$('#myLinks').css('display'));
-    
+  myFunction() {    
     if ($('#myLinks').css('display') === "block") {
       $('#myLinks').css('display','none');
     } else {
