@@ -8,12 +8,14 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatSelectModule} from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
 import { VideoGalleryComponent } from './video-gallery/video-gallery.component';
-import { HomeComponent } from './home/home.component'
+import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component'
 @NgModule({
   declarations: [
     AppComponent,
     VideoGalleryComponent,
-    HomeComponent
+    HomeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
