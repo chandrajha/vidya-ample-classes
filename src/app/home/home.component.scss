@@ -1,0 +1,11 @@
+/* Make the image fully responsive */
+.container{
+	width: 100%;
+	margin: unset;
+	padding: unset;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 100%;
+  margin: auto;
+}

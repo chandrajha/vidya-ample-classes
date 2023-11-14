@@ -1,0 +1,8 @@
+.video-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    iframe{
+        margin: 5px;
+    }
+}
