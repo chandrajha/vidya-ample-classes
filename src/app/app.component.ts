@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 interface Food {
   value: string;
@@ -10,7 +10,11 @@ interface Food {
   styleUrls: ['./app.component.scss']
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit{
+
+  ngOnInit(): void {
+    this.addEvent();
+  }
   
   title = 'vidya-ample';
   selectedValue: string='';
@@ -29,5 +33,13 @@ export class AppComponent {
       $('.super-menu').css('display','block');
 
     }
+  }
+
+  addEvent(){
+    $( ".super-menu nav ul li" ).on( "click", function() {
+      if(this.getAttribute('class') !== 'dropdown'){
+        $('#myLinks').css('display','none');  
+      }
+    });
   }
 }
