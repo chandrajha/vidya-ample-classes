@@ -6,3 +6,9 @@
         margin: 5px;
     }
 }
+@media (max-width: 768px){
+    .video-gallery{
+        overflow: auto;
+        height: calc(100vh - 160px);
+    }
+}
