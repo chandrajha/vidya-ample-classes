@@ -11,12 +11,15 @@ import { VideoGalleryComponent } from './video-gallery/video-gallery.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component'
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { DirectorMessageComponent } from './director-message/director-message.component';
+import { MatCardModule } from '@angular/material/card';
 @NgModule({
   declarations: [
     AppComponent,
     VideoGalleryComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    DirectorMessageComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     BrowserAnimationsModule,
     MatButtonModule,
     MatSelectModule,
-    FormsModule
+    FormsModule,
+    MatCardModule
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy }

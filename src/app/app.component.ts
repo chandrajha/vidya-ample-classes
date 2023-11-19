@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import { DetectMobileDeviceService } from './services/detect-mobile-device.service';
 interface Food {
   value: string;
   viewValue: string;
@@ -10,11 +11,22 @@ interface Food {
   styleUrls: ['./app.component.scss']
 })
 
+
+
 export class AppComponent implements OnInit{
 
+  constructor(private detectDevice:DetectMobileDeviceService){}
+
   ngOnInit(): void {
-    this.addEvent();
+    this.addEvent();    
   }
+
+  @HostListener('window:resize', ['$event']) onResize(event:any) {
+    console.log('event :: ',event);
+  }
+
+  
+   
   
   title = 'vidya-ample';
   selectedValue: string='';
@@ -35,11 +47,13 @@ export class AppComponent implements OnInit{
     }
   }
 
-  addEvent(){
-    $( ".super-menu nav ul li" ).on( "click", function() {
-      if(this.getAttribute('class') !== 'dropdown'){
-        $('#myLinks').css('display','none');  
-      }
-    });
-  }
+  addEvent(){    
+    if(this.detectDevice.isMobile()){
+      $( ".super-menu nav ul li" ).on( "click", function() {
+        if(this.getAttribute('class') !== 'dropdown'){        
+            $('#myLinks').css('display','none');
+        }
+      });
+    }   
+  }  
 }
