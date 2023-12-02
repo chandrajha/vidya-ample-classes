@@ -13,13 +13,17 @@ import { ContactComponent } from './contact/contact.component'
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { DirectorMessageComponent } from './director-message/director-message.component';
 import { MatCardModule } from '@angular/material/card';
+import { AchieverComponent } from './achiever/achiever.component';
+import { WhyVidyaAmpleComponent } from './why-vidya-ample/why-vidya-ample.component';
 @NgModule({
   declarations: [
     AppComponent,
     VideoGalleryComponent,
     HomeComponent,
     ContactComponent,
-    DirectorMessageComponent
+    DirectorMessageComponent,
+    AchieverComponent,
+    WhyVidyaAmpleComponent
   ],
   imports: [
     BrowserModule,
