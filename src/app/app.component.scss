@@ -122,6 +122,26 @@
 	display: none;
 }
 
+.olympiad-banner {
+	background-color: #f0f0f0;
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+
+  .olympiad-banner marquee {
+	background-color: #3498db;
+	color: #ffffff;
+	font-size: 15px;
+	padding: 5px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .olympiad-banner marquee span{
+	cursor: pointer;
+  }
+
 
 
 // --Responsiveness---

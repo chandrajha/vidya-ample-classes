@@ -6,6 +6,7 @@ import { ContactComponent } from './contact/contact.component';
 import { DirectorMessageComponent } from './director-message/director-message.component';
 import { AchieverComponent } from './achiever/achiever.component';
 import { WhyVidyaAmpleComponent } from './why-vidya-ample/why-vidya-ample.component';
+import { OlympiadBannerComponent } from './olympiad-banner/olympiad-banner.component';
 
 const routes: Routes = [
   {path:'',component: HomeComponent},
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path:'director-message',component: DirectorMessageComponent},
   {path:'achiever-star',component: AchieverComponent},  
   {path:'why-vidya-ample',component: WhyVidyaAmpleComponent},    
+  {path:'olympiad-banner',component: OlympiadBannerComponent},
   {path:'**',component: HomeComponent},
 ];
 
