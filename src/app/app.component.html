@@ -52,36 +52,71 @@
         <li class="active"><a href="#">Home</a></li>
         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">About Director</a></li>
-            <li><a [routerLink]="['director-message']">Director Message</a></li>
-            <li><a [routerLink]="['why-vidya-ample']">Why VidyaAmple ?</a></li>
-            <li><a [routerLink]="['achiever-star']">Achiever & Star Campus</a></li>
+            <li><a [routerLink]="['why-vidya-ample']">Why Vidya Ample ?</a></li>
+            <li><a [routerLink]="['director-message']">Core Team Message</a></li>
           </ul>
         </li>
         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Courses<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Foundation</a></li>
-            <li><a href="#">Elementry</a></li>
-            <li><a href="#">Advance</a></li>
-            <li><a href="#">Crash Courses</a></li>
+            <li>
+              <a class="dropdown-item" href="#"> Foundation &raquo; </a>
+              <ul class="dropdown-menu dropdown-submenu dropdown-submenu-left">
+                <li>
+                  <a class="dropdown-item" href="#">Class 6</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Class 7</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Class 8</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Class 9</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Class 10</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"> Advance &raquo; </a>
+              <ul class="dropdown-menu dropdown-submenu dropdown-submenu-left">
+                <li>
+                  <a class="dropdown-item" href="#">Class 8</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Class 9</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Class 10</a>
+                </li>
+              </ul>
+            </li>
           </ul>
         </li>
-        <li><a href="#">Faculty</a></li>
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Test Series<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Foundation </a></li>
-            <li><a href="#">Elementry</a></li>
-            <li><a href="#">Advance</a></li>
-            <li><a href="#">Crash Courses</a></li>
-          </ul>
-        </li>
+        
         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Admission<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Admission Process </a></li>
             <li><a href="#">Admission Enquiry</a></li>
             <li><a href="#">Privacy Policy</a></li>
           </ul>
+        </li> 
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Faculty<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Math </a></li>
+            <li><a href="#">Physics</a></li>
+            <li><a href="#">Chemistry</a></li>
+            <li><a href="#">Biology</a></li>
+            <li><a href="#">Social Studies</a></li>
+            <li><a href="#">English</a></li>
+            <li><a href="#">Mental Ability</a></li>
+            <li><a href="#">Computer Science</a></li>
+          </ul>
         </li>
+        <li><a [routerLink]="['teaching-methodlogy']">Teaching Methodology</a></li>
+        <li><a [routerLink]="['residencial-program']">Residential Programme</a></li>
+        <li><a href="#">Regular Test</a></li>        
         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Result<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Board </a></li>

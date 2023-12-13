@@ -16,6 +16,8 @@ import { MatCardModule } from '@angular/material/card';
 import { AchieverComponent } from './achiever/achiever.component';
 import { WhyVidyaAmpleComponent } from './why-vidya-ample/why-vidya-ample.component';
 import { OlympiadBannerComponent } from './olympiad-banner/olympiad-banner.component';
+import { TeachingMethodlogyComponent } from './teaching-methodlogy/teaching-methodlogy.component';
+import { ResidencialProgramComponent } from './residencial-program/residencial-program.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,9 @@ import { OlympiadBannerComponent } from './olympiad-banner/olympiad-banner.compo
     DirectorMessageComponent,
     AchieverComponent,
     WhyVidyaAmpleComponent,
-    OlympiadBannerComponent
+    OlympiadBannerComponent,
+    TeachingMethodlogyComponent,
+    ResidencialProgramComponent
   ],
   imports: [
     BrowserModule,

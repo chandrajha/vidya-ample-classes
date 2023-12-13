@@ -7,6 +7,8 @@ import { DirectorMessageComponent } from './director-message/director-message.co
 import { AchieverComponent } from './achiever/achiever.component';
 import { WhyVidyaAmpleComponent } from './why-vidya-ample/why-vidya-ample.component';
 import { OlympiadBannerComponent } from './olympiad-banner/olympiad-banner.component';
+import { TeachingMethodlogyComponent } from './teaching-methodlogy/teaching-methodlogy.component';
+import { ResidencialProgramComponent } from './residencial-program/residencial-program.component';
 
 const routes: Routes = [
   {path:'',component: HomeComponent},
@@ -17,6 +19,8 @@ const routes: Routes = [
   {path:'achiever-star',component: AchieverComponent},  
   {path:'why-vidya-ample',component: WhyVidyaAmpleComponent},    
   {path:'olympiad-banner',component: OlympiadBannerComponent},
+  {path:'teaching-methodlogy',component: TeachingMethodlogyComponent}, 
+  {path:'residencial-program',component: ResidencialProgramComponent}, 
   {path:'**',component: HomeComponent},
 ];
 
