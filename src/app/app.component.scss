@@ -159,8 +159,20 @@
 	.dropdown-menu > li:hover > .dropdown-submenu {
 	display: block;
 	}
+	.mob-logo{
+		display: none;
+	}
 // --Responsiveness---
 @media (max-width: 768px){
+	.mob-logo{
+		display: block;
+	}
+    .mob-logo img{
+		width: 100%;
+	}
+	.wrapper{
+		display: none;
+	}
 	.helps, .helps2 {
 		display: none;
 	}
